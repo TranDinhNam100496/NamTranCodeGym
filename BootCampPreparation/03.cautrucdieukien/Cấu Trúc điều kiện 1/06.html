@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tiền Hoa Hồng</title>
+    <p id="showMoney"></p>
+</head>
+
+<body>
+    <script>
+        var x = parseFloat(prompt("Doanh Số Bán Hàng"));
+        var Monney = x * 0.2;
+        var Monney1 = x * 0.4;
+        var Monney2 = x * 0.6;
+        console.log(x);
+        if (x == 0) {
+            document.getElementById("showMoney").innerHTML = "Không Có Hoa Hồng"
+        } else if (x > 0 && x < 5) {
+            document.getElementById("showMoney").innerHTML = "Hoa Hồng Tháng Này là" + Monney + "VND"
+        } else if (x <= 10) {
+            document.getElementById("showMoney").innerHTML = "Hoa Hồng Tháng Này là" + Monney1 + "VND"
+        } else if (x > 10) {
+            document.getElementById("showMoney").innerHTML = "Hoa Hồng Tháng Này là" + Monney2 + "VND"
+        }
+    </script>
+
+</body>
+
+</html>

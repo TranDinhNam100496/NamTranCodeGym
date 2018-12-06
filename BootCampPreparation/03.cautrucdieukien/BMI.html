@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Body mass index BMI </title>
+    </head>
+    <body>
+        <script>
+            var weight = parseFloat(prompt("Can Nang"));
+            var height = parseFloat(prompt("chieu cao"));
+            var BMI = weight / (height*height);
+            if (BMI < 18)
+               document.write("Underweight");
+            else if (BMI < 25.0)
+               document.write("Normal");
+            else if (BMI < 30.0)
+               document.write("Overweight");
+            else
+               document.write("Obese");
+        </script>         
+    </body>
+</html> 

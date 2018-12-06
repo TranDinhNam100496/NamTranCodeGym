@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm Số Lớn Nhất</title>
+    <p id="result"></p>
+</head>
+<body>
+    <script>         
+       var a = parseFloat(prompt("Nhập Số Thứ Nhất"));
+       var b = parseFloat(prompt("Nhập số Thứ Hai"));
+       var c = parseFloat(prompt("Nhập Số Thứ Ba"));
+       max = a ;
+       if (max < b){
+           max = b;
+       }if (max < c){
+           max = c ;
+       }
+       document.getElementById("result").innerHTML = "Max là " + max;
+    </script>
+</body>
+</html>

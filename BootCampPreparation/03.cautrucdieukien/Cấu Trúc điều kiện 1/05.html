@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp Hạng Học Lực</title>
+    <p id="Diem"></p>
+</head>
+
+<body>
+    <script>
+        var a = parseFloat(prompt("Điểm kiểm Tra"));
+        var b = parseFloat(prompt("Điểm Giữa Kỳ"));
+        var c = parseFloat(prompt("Điểm Cuối Kỳ"));
+        var x = (a + b + c) / 3;
+        if (x < 5) {
+            document.getElementById("Diem").innerHTML = "Loai Kém"
+        } else if (x < 6.5) {
+            document.getElementById("Diem").innerHTML = "Loại Trung Bình"
+        } else if (x < 7.5) {
+            document.getElementById("Diem").innerHTML = "Loại Khá"
+        } else if (x <= 10) {
+            document.getElementById("Diem").innerHTML = "Loại Giỏi"
+        } else {
+            document.getElementById("Diem").innerHTML = "Ngoại Hạng"
+        }
+    </script>
+</body>
+
+</html>

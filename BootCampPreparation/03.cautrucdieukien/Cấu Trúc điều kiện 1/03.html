@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem Tra Gia Tri So</title>
+    <p id = "A"></p>
+</head>
+<body>
+    <script>    
+        var value = parseFloat(prompt("Enter Number"));
+        if(value > 0){
+          document.getElementById("A").innerHTML = "Lớn Hơn 0";
+        } else if (value == 0){
+            document.getElementById("A").innerHTML = "Bằng 0";
+        } else {
+            document.getElementById("A").innerHTML = "Nhỏ hơn 0"
+        }
+    </script>
+</body>
+</html>

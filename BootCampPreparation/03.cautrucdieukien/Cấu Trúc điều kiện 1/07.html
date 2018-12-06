@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cước Phí Điện Thoại</title>
+    <p id="Tien"></p>
+</head>
+<body>
+    <script>
+       var a = parseFloat(prompt("Số Phút Đã Gọi"));
+       var x1 = a*1.600;
+       var x2 = a*1.400;
+       var x3 = a*1.200;
+       if( a>100){
+           document.getElementById("Tien").innerHTML = "Cước điện thoại" + x1 + "VND";
+       } else if(a>50){
+           document.getElementById("Tien").innerHTML = "Cước  điện thoại" + x2 + "VND"
+       } else {
+           document.getElementById("Tien").innerHTML = "Cước điện thoại" + x3 + "VND";
+       }
+    </script>
+</body>
+
+</html>

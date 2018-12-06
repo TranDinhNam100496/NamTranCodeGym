@@ -1,0 +1,32 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Kiem Tra Nam Nhuan </title>
+    </head>
+    <body>
+        <script>
+          var year = parseInt(prompt("Enter a year"));
+          var isLeaapYear = false ;
+          var isDivisibleBy4 = year % 4 == 0 ;
+          if(isDivisibleBy4){
+              var isDivisibleBy100 = year % 100 == 0;
+              if(isDivisibleBy100){
+                  var isDivisible400 = year % 400 == 0;
+                  if(isDivisible400){
+                      isLeaapYear = true ;
+                  }
+              } else {
+                  isLeaapYear = true
+              }
+          }
+          if (isLeaapYear){
+              alert(year + "is a leap year");
+          } else {
+              alert(year + "is Not a leap year ");
+          }
+
+        </script>         
+    </body>
+</html> 
