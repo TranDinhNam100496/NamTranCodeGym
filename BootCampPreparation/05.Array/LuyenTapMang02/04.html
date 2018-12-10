@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị độ dài của chuổi</title>
+</head>
+
+<body>
+    <p id="array"></p>
+    <script>
+        var str = prompt("Nhập chuỗi để hiển thị độ dài: ");
+        var arr = str.split("");
+        var count = 0;
+        for (var i = 0; i < arr.length; i++) {
+            count++;
+        }
+        document.getElementById("array").innerHTML = count;
+    </script>
+</body>
+
+</html>

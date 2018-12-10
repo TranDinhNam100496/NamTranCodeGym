@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title></title>
+</head>
+<body>
+    <input type="text" id = "txtTD"/>
+    <input type="button" id = "vietNames" value="Tiếng Việt" onclick="tiengviet()"/>
+    <input type="button" id ="english" value="Tiếng anh" onclick="tienganh()"/> 
+    <p id = "result"></p>
+    <script>
+        var viet = ["Chó", "mèo", "cá", "lợn"];
+        var eng = [ "dog", "cat", "fish", "pig"];
+        function tiengviet(){
+            var word = document.getElementById("txtTD").value ;
+            for(var i = 0; i < viet.length; i ++){
+                if (word === viet[i]){
+                    document.getElementById("result").innerHTML= eng[i];
+                    break;
+                }
+
+            }
+        }
+        function tienganh(){
+            var word = document.getElementById("txtTD").value;
+            for(var i =0 ; i<eng.length; i++){
+                if(word === eng[i]){
+                    document.getElementById("result").innerHTML = viet[i];
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

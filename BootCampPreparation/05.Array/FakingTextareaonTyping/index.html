@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+
+<body>
+        <form name="f">
+            <h2>Type anthing slowly</h2>
+            <textarea name="txt" id="text" cols="60" rows="20" onkeyup="typeTextarea()"></textarea>
+        </form>
+    <script>
+        var text = ["I", " ", "L", "O", "V", "E", " ", "U", " ", "P", "Ặ", "C", " ", "P", "Ặ", "C", " ", "<", "3", " ", "!"];
+        var count = 0;
+        var tmp = "";
+        function typeTextarea() {
+            document.getElementById("text").value = "";
+            if (count == text.length) {
+                tmp = "";
+                count = 0;
+            } else {
+                tmp += text[count++];
+            }
+            document.getElementById("text").value = tmp;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập Vào một mảng ký tự</title>
+</head>
+
+<body>
+    <script>
+        var names = ["nam", "-", "Pro"];
+        for (var i = 0; i < names.length; i++) {
+            if (names[i] === "-") {
+                names[i] = "_";
+            }
+        }
+        document.write(names.join(""));
+    </script>
+</body>
+</html>
