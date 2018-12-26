@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>String</title>
+</head>
+
+<body>
+    <script>
+        var str = "Tôi yêu ngôn ngữ lập trình javascript";
+        var count = 0;
+        for(var i = 0 ; i < str.length; i++){
+            if(str[i] == "a"){
+                count++;
+            }
+        }
+        var arr = str.split(" ");
+        var replace = str.replace('javascript', 'Typescript');
+        console.log("Số lần xuất hiện a trong chuỗi là :" + count);
+        console.log("Tách chuỗi vào trong mảng là :" + "[" + arr.join(", ") + "]");
+        console.log("Số Từ Có Trong Chuỗi " + arr + "là :" + " " + arr.length);
+        console.log("thay thế chữ 'Javascript' bằng chữ 'Typescript' :" + replace);
+        
+    </script>
+</body>
+
+</html>

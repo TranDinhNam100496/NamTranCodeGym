@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>String </title>
+</head>
+
+<body>
+    <script>       
+       var string = "Helo 123" ;
+       console.log("Số từ trong chuỗi là :" + countString(string));
+       function countString(str){
+           var count = 0;
+           for(var i = 0 ; i < str.length; i++){
+               if(isNaN(str[i])){
+                   count++;
+               }
+           }
+           return count;
+       }
+    </script>
+</body>
+
+</html>

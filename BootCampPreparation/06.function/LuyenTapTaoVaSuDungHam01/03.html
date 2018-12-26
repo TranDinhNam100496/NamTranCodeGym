@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Tạo Hàm Nhận 2 Tham Số </title>
+</head>
+   
+<body>
+    <script>
+     var number1 = parseInt(prompt("Nhập Số Thứ Nhất"));
+     var number2 = parseInt(prompt("Nhập Số Thứ 2"));
+      
+     if(number1 > number2){
+         alert(number1 +  "Lớn Hơn"  + number2);
+     } else {
+         if(number1 <= number2){
+         var result = sum(number1, number2);
+         document.write(result);
+     }
+    } 
+    function sum(number1, number2){
+        return number1 + number2;
+    }
+    </script>
+</body>
+
+</html>

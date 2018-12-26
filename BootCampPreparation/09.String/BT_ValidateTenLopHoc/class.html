@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Class Name </title>
+</head>
+
+<body>
+    <script>
+        function testClassName(className) {
+            var name = /^[CAP]\d{4}[GHIKLM]$/;
+            if (name.test(className)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var class1 = "C0318G";
+        console.log(testClassName(class1));
+        var class2 = "M0318G";
+        console.log(testClassName(class2));
+        
+    </script>
+</body>
+
+</html>

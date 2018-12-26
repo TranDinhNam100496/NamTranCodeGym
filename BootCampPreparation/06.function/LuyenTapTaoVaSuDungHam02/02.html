@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ham Tinh Chu Vi Và Diện Tích Hình Tròn </title>
+    <h1>Diện Tích và Chu Vi Hình Tròn</h1>
+</head>
+
+<body>
+    <script>
+        function area(radius) {
+            return radius * radius * Math.PI;
+        }
+        function circum(radius) {
+            return radius * 2 * Math.PI;
+        }
+
+
+
+        var radius = parseFloat(prompt("Nhập Bán Kính"));
+        document.write("Diện tích hình tròn là : " + area(radius) + "</br>" +
+            "Chu vi hình tròn là : " + circum(radius));
+
+
+
+    </script>
+</body>
+
+</html>

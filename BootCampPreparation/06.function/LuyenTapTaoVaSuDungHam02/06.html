@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tran Dinh Nam</title>
+</head>
+
+<body>
+    <script>
+        function checkNumber(character) {
+            character = character.toLowerCase();
+            if (character == 'u' || character == 'e' || character == 'o' || character == 'a' || character == 'i') {
+                return true;
+            }
+            return false;
+        }
+        var character = prompt("Nhập vào một ký tự bất kỳ trong bảng chữ cái [a-z][A-Z]:");
+        if (checkNumber(character)) { 
+            document.write("Ký tự nhập vào là nguyên âm");
+        } else {
+            document.write("Ký tự nhập vào là phụ âm");
+        }
+    </script>
+</body>
+
+</html>

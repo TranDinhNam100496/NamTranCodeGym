@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Tran Dinh Nam</title>
+    <h1>Đếm số nguyên âm phụ âm </h1>
+</head>
+
+<body>
+    <script>
+        var string = "hello girl";
+        console.log("Nguyên Âm Là :" + conuntVowel(string));
+        console.log("Phụ Âm là :" + countConsonant(string));
+      function conuntVowel(str){
+          var count = 0;
+          var patt = /^[uoeaiUEOAI]/;
+          for(var i = 0 ; i< str.length; i++){
+              if(patt.test(str[i])){
+                  count++;
+              }
+          }
+          return count;
+      }function countConsonant(str){
+          var count = 0;
+          var patt = /^[BbCcDdFfGgHhJjKkLlMmNnPpQqRrSsTtVvWwXxZz]/;
+          for (var j = 0 ; j <str.length; j++){
+              if(patt.test(str[j])){
+                  count++;
+              }
+          }
+          return count;
+      }
+      
+    </script>
+</body>
+
+</html>

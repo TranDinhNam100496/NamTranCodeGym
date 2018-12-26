@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Number Phone </title>
+</head>
+
+<body>
+    <script>
+        function testNumberPhone(numberPhone) {
+            var number = /^\(\d{2}\)\-\(0\d{9}\)$/;
+            if (number.test(numberPhone)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var numberPhone1 = "(84)-(0978489648)";
+        console.log(testNumberPhone(numberPhone1));
+        var numberPhone2 = "(a8)-(22222222)";
+        console.log(testNumberPhone(numberPhone2));
+    </script>
+</body>
+
+</html>

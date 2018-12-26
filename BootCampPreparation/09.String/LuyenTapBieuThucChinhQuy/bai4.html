@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Tran Dinh Nam </title>
+    <h1>Kiểm Tra Mã Số Hợp Lệ</h1>
+</head>
+
+<body>
+    <script>  
+    function testCode(str){
+        var code = /^(#0)[0-9]{8}@$/;
+        if (code.test(str)){
+            return true;
+        }else {
+            return false;
+        }
+    }
+    var code = "#012345678@";
+    console.log(testCode(code));
+    </script>
+</body>
+
+</html>

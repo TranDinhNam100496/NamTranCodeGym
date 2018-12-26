@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TTran Dinh Nam</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="500" height="200" style="border:1px solid #d3d3d3;"></canvas>
+    <script>
+        var Rectangle = function(width, height) {
+            this.width = width
+            this.height = height
+            
+            this.getCircum = function() {
+                return (this.width + this.height) * 2;
+            }
+            this.getArea = function() {
+                return this.width * this.height;
+            }
+            this.showRectangle = function() {
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.fillRect(20, 20, this.width, this.height);
+            }
+            
+            this.setRectangle = function(width, height) {
+                this.width = width;
+                this.height = height;
+            }
+        };
+        var rectangle = new Rectangle(100, 300);
+        console.log(rectangle.width + " " + rectangle.height);
+        rectangle.showRectangle();
+        rectangle.setRectangle(900, 300);
+        console.log(rectangle.width + " " + rectangle.height);
+        rectangle.showRectangle();
+        console.log(rectangle.getArea());
+        console.log(rectangle.getCircum());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title> Year old </title>
+</head>
+
+<body>
+    <script>
+        var birthDay = new Date("April 10 1996");
+        var now = new Date();
+        var yearOld = (now.getFullYear() - birthDay.getFullYear());
+        console.log("Tôi Đã Sống :" + yearOld + "Năm");
+        var month =  (now.getFullYear() - birthDay.getFullYear())*12;
+        console.log("Tôi Đã Sống :" + month + "Tháng"); 
+        var day =  (now.getFullYear() - birthDay.getFullYear())*12*30;
+        console.log("Tôi Đã Sống:" + day + "ngày");
+        var hours = (now.getFullYear() - birthDay.getFullYear())*12*30*24;
+        console.log("Tôi Đã Sống:" + hours + "giờ");
+        var minute = (now.getFullYear() - birthDay.getFullYear())*12*30*24*60;
+        console.log("Tôi Đã Sống :" + minute + "phút");
+        var seconds =  (now.getFullYear() - birthDay.getFullYear())*12*30*24*60*60;
+        console.log("Tôi Đã Sống :" + seconds + "giây");
+
+    </script>
+</body>
+
+</html>

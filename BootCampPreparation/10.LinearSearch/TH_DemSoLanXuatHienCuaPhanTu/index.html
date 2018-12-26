@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tran Dinh Nam</title>
+    <h1>Đếm Số Phần Tử</h1>
+</head>
+
+<body>
+    <script>
+        var nums = [];
+        for (var i = 0; i < 100; ++i) {
+            if (i > 0 && i % 10 == 0) {
+                document.write("<br/>");
+            }
+            nums[i] = Math.floor(Math.random() * 101);
+            document.write(nums[i] + "&nbsp");
+        }
+        var value = parseInt(prompt("Enter a number:"));
+        function number(n) {
+            for (var i = 0; i < nums.length; i++) {
+                if (nums[i] == value) {
+                    return i + 1;
+                }
+            }
+        }
+        function countNumbers() {
+            count = 0;
+            for (var i = 0; i < nums.length; i++) {
+                if (nums[i] === value) {
+                    count++;
+                }
+            }
+            return count;
+        }
+        document.write("<br/>");
+        document.write("vị trí xuất hiện của " + value + " là :" + " " + number(nums) + "<br/>");
+        document.write("Số lần xuất hiện của " + value + " là :" +  " " + countNumbers());
+    </script>
+</body>
+
+</html>

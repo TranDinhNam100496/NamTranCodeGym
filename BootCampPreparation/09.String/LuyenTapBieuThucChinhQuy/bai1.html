@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Class Name </title>
+</head>
+
+<body>
+    <script>
+        function testString(str) {
+            var string = /^\d{2}\/\d{2}\/\d{4}$/;
+            if (string.test(str)){
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var str1 = "11/11/1001";
+        console.log(testString(str1));        
+    </script>
+</body>
+
+</html>

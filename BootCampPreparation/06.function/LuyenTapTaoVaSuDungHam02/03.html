@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Tran Dinh Nam </title>
+    <h1>Hàm Tính Giai thừa </h1>
+</head>
+
+<body>
+    <script>
+       function showFactorial(number){
+           var factorial = 1 ;
+           for (var i = 2 ; i <= number; i++){
+               factorial *=i;
+           }
+           return factorial;
+       }
+        var number = parseInt(prompt("Nhập Vào Số bất Kỳ"));
+        alert("giai thừa của " + number + "=" + showFactorial(number));
+    </script>
+</body>
+
+</html>
+  
+

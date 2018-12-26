@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tran Dinh Nam </title>
+</head>
+
+<body>
+    <script>
+        var arr = [50, 76, 81, 84, 82, 88];
+        var number = parseInt(prompt("Nhập Phần Tử Muốn Tìm Kiếm "));
+        function checkNumber(value) {
+            var index = -1;
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] == value && value == 82) {
+                    alert("correct");
+                    index = i + 1;
+                    break;
+                }
+                if (arr[i] == value && value == 50) {
+                    alert("Too low")
+                    index = i + 1;
+                }
+                if (arr[i] == value && value == 76) {
+                    alert("Too low");
+                    index = i + 1;
+                }
+                if (arr[i] == value && value == 81) {
+                    alert("Too low");
+                    index = i + 1;
+
+                }
+                if (arr[i] == value && value == 84) {
+                    alert("Too High ");
+                    index = i + 1;
+
+                }
+                if (arr[i] == value && value == 84) {
+                    alert("Too High ");
+                    index = i + 1;
+                }
+                if (arr[i] == value && value == 88) {
+                    alert("Too High ");
+                    index = i + 1;
+                }
+            }
+            console.log(index);
+        }
+        checkNumber(number);
+
+    </script>
+</body>
+
+</html>

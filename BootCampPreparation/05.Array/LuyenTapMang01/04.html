@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập vào mảng số nguyên và đảo ngược </title>
+</head>
+
+<body>
+    <script>
+        var arr = [];
+        var result;
+        for (var i = 0; i <10 ; i++) {
+            arr.push(parseInt(Math.random()*20));
+        }
+        result = "Mảng trước khi đảo ngược: [" + arr.join(", ") + "]<br>" + "Mảng sau khi đảo ngược: [" + arr.reverse().join(", ") + "]"; 
+        document.write(result);
+    </script>
+</body>
+
+</html>

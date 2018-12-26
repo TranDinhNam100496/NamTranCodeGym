@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> tạo Mảng </title>
+</head>
+
+<body>
+    <script>
+        var star = prompt("Enter Name Star");
+        var starName = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        var constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        var result = searchConstellation(starName);
+        function searchConstellation(starName) {
+            for (var i = 0; i < starName.length; i++) {
+                if (star === starName[i]) {
+                    document.write(constellation[i]);
+                }
+            }
+            return result;
+        }
+
+
+    </script>
+</body>
+
+</html>

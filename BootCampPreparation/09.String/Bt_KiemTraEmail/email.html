@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tran Dinh Nam </title>
+</head>
+
+<body>
+    <script>
+        function testEmail(str) {
+            var email = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+            if (email.test(str)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var email1 = "a@gmail.com";
+        console.log(testEmail(email1));
+        var email2 = "ab@yahoo.com";
+        console.log(testEmail(email1));
+        var email3 = "@gmail.com";
+        console.log(testEmail(email3));
+        var email4 = "@#abc@gmail.com";
+        console.log(testEmail(email4));
+    </script>
+</body>
+
+</html>
