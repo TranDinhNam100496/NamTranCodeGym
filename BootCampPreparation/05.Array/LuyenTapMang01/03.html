@@ -7,18 +7,19 @@
 </head>
 <body>
     <script>
-        var arr = ["1", "2", "3", "4"];
-        var result;
-        var max = arr[0];
-        var index = 1;
-        for (var i = 0; i < arr.length; i++) {          
-            if (arr[i] > max) {
-                max = arr[i];
-                index = i + 1;
-            }
-        }
-        result = "Các phần tử có trong mảng: [" + arr.join(", ") + "]<br>" + "Trong đó " + max + " là phần tử có giá trị lớn nhất" + "Nằm ở vị trí thứ "+ index; 
-        document.write(result);
+      var arr = [2, 3, 5, 7, 9, 4];
+      var max = arr[0];
+      var tb = 0;
+      index = 1;
+      for(var i = 0 ; i< arr.length; i++){
+          tb += arr[i];
+          if (arr[i]> max){
+              max = arr[i];
+              index ++;          
+          }
+      }
+      console.log("Giá Trị Lớn Nhất TRONG Mảng là :" + max + "Vị trị của nó là :" + index);
+      console.log("Giá Trị Trung bình của mảng là :" + tb/arr.length)
     </script>
 </body>
 
